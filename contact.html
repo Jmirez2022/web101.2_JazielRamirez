@@ -3,36 +3,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="./contact-styles.css">
 </head>
+    <script>
+        let usersInput
+        function setValue(input){
+            console.log({input})
+        }
+    </script> 
 <body>
-    <header>
-        <h1>Jaziel Ramirez</h1>
-    </header>
-        <main><nav>Contact me at Jazi.2000@hotmail.com or text me at 832-388-0073</nav>
-            <div class="main-container">
-             
-            <section>
-                <h2 class="profile">Profile</h2>
-                  <p1>I am a very postive and enthsiastic person, I am interested in anything that has to do with IT. I have always wanted to learn how to code websites and applications, and I have been working good programs that i have put in my portfolio. I am looking for a full time employment of 40 hrs.</p1>
-                <h3 class="experiance">Experiance</h3> 
-                    <p1>I have repaired computers for friends in the past. I have used TeamViewer to help friends remotely</p1>          
-            </section>
-            <section1>
-                <h2 class="education">Education</h2>
-                <p2> Studied in San Jacinto college to complete my "Cyber Security specialty, Certificate of Technology". I am currently enrolled in Austin Coding Academy to study coding.</p2>
-                <h3 class="skills">Skills</h3>   
-                <p2>• Bilingual- Spanish and English
-                    • Knowledge of computer parts and computer applications
-                    • Able to use Word, PowerPoint, Excel and Access proficiently 
-                    • Worked with computer parts
-                    • Knowledge of installing new software
-                    • TeamViewer 
-                    </p2> 
-            </section1>
+    <div>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" required>
+    </div>
+
+    <div>
+        <label for="comments">Comments</label>
+        <textarea maxlength="500" minlength="20"></textarea>
+    </div>
+
+    <select name="How did you hear about us">
+        <option value="first">Classmate</option>
+        <option value="second">Resume Submission</option>
+        <option value="third">LinkedIn</option>
+        <option value="fourth">Coding Academy Rec</option>
+    </select>
+    <form>
+        <p>Would you like to be contacted back?:</p>
+        <div>
+            <input type="radio" id="contactChoice1"
+            name="Yes" value="Yes">
+            <label for="contactChoice1">Yes</label>
+            
+            <input type="radio" id="contactChoice2"
+            name="No" value="No">
+            <label for="contactChoice1">No</label>
         </div>
-    
-        </main>
-    
+        <input type="date" value="">
+    </form>
+    <div>
+        <input type="submit" value="Submit">
+    </div>
 </body>
 </html>
