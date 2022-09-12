@@ -4,3 +4,7 @@
     }
   
   }
+  
+.border-blue {
+  border: 1px solid transparent;
+}
